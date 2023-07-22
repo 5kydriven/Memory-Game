@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  grid-gap: 1em;
+  width: 700px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.card {
+  width: 100px;
+  height: 125px;
+  background-color: #333;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #333;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.card[data-color="blue"].flipped {
+  background-color: #2196f3;
+}
+
+.card[data-color="green"].flipped {
+  background-color: #4caf50;
+}
+
+.card[data-color="red"].flipped {
+  background-color: #f44336;
+}
+
+.card[data-color="yellow"].flipped {
+  background-color: #ffeb3b;
+}
+
+.card[data-color="pink"].flipped {
+  background-color: pink;
+}
+
+.card[data-color="violet"].flipped {
+  background-color: violet;
+}
+
+.card[data-color="orange"].flipped {
+  background-color: orange;
+}
+
+.card[data-color="indigo"].flipped {
+  background-color: indigo;
+}
+
+.card[data-color="black"].flipped {
+  background-color: black;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: rgba(0, 0, 0, .5);
+}
